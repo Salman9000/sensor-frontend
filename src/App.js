@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Form from "./Form";
+import NavBar from "./NavBar";
+import { Routes, Route, Link } from "react-router-dom";
+import ViewAll from "./ViewAll";
+import BLE from "./BLE";
+import EditBle from "./EditBle";
+import Canvas from "./Canvas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="p-4">
+              <Form />
+            </div>
+          }
+        />
+        <Route path="/view" element={<ViewAll />} />
+        <Route path="/view/:id" element={<BLE />} />
+        <Route path="/view/edit/:id" element={<EditBle />} />
+        <Route path="/canvas" element={<Canvas />} />
+      </Routes>
     </div>
   );
 }
