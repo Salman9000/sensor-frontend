@@ -14,7 +14,7 @@ export default function Example() {
   const navigation = [
     { name: "Create", href: "/", current:  pathname === "/" && true},
     { name: "View", href: "/view", current: pathname === "/view" && true },
-    { name: "Canvas", href: "/canvas", current: pathname === "/canvas" && true },
+    { name: "Container", href: "/container", current: pathname === "/ontainer" && true },
   ];
   
   return (

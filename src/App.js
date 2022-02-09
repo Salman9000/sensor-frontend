@@ -6,6 +6,7 @@ import ViewAll from "./ViewAll";
 import BLE from "./BLE";
 import EditBle from "./EditBle";
 import Canvas from "./Canvas";
+import AddContainer from "./AddContainer";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/view" element={<ViewAll />} />
         <Route path="/view/:id" element={<BLE />} />
         <Route path="/view/edit/:id" element={<EditBle />} />
-        <Route path="/canvas" element={<Canvas />} />
+        <Route path="/container" element={<AddContainer />} />
       </Routes>
     </div>
   );

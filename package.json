@@ -19,6 +19,7 @@
     "react-rangeslider": "^2.2.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-select": "^5.2.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -50,5 +51,5 @@
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18"
   },
-  "proxy":"https://at-backend1.herokuapp.com"
+  "proxy": "https://at-backend1.herokuapp.com"
 }
